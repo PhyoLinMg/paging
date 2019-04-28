@@ -6,13 +6,13 @@ import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.membermvvm.R
-import com.example.membermvvm.data.Member
+import com.example.membermvvm.data.Data
 import com.example.membermvvm.utils.GlideApp
 import com.example.membermvvm.utils.inflate
 import kotlinx.android.synthetic.main.member_card.view.*
 
 
-class MemberAdapter(val context: Context) : PagedListAdapter<Member, MemberAdapter.MemberViewHolder>(MemberDiffUtilCallBack())   {
+class MemberAdapter(val context: Context) : PagedListAdapter<Data, MemberAdapter.MemberViewHolder>(MemberDiffUtilCallBack())   {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemberAdapter.MemberViewHolder {
         return MemberViewHolder(parent.inflate(R.layout.member_card))
     }

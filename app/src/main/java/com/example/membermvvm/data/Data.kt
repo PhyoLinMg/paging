@@ -2,7 +2,7 @@ package com.example.membermvvm.data
 
 import com.google.gson.annotations.SerializedName
 
-data class Member(
+data class Data(
     @SerializedName("_id")
     val id: String,
     val address: String,
